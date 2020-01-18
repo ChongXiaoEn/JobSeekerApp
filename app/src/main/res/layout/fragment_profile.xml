@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImg"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorGray"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userImg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Your name" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/editName"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/txtBasicInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line1"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="10dp"
+            android:text="Basic Info"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/email_ic"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="9dp"
+            android:layout_toEndOf="@id/email_ic"
+            android:text="E-mail"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/email_ic"
+            android:layout_width="63dp"
+            android:layout_height="38dp"
+            android:layout_below="@id/txtBasicInfo"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_email" />
+
+        <ImageView
+            android:id="@+id/phone_ic"
+            android:layout_width="63dp"
+            android:layout_height="38dp"
+            android:layout_below="@id/email_ic"
+            android:layout_alignStart="@id/email_ic"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_smartphone" />
+
+        <TextView
+            android:id="@+id/txtPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/txtEmail"
+            android:layout_alignBottom="@id/phone_ic"
+            android:layout_marginBottom="9dp"
+            android:layout_toEndOf="@id/phone_ic"
+            android:text="Phone No."
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/location_ic"
+            android:layout_width="63dp"
+            android:layout_height="38dp"
+            android:layout_below="@id/phone_ic"
+            android:layout_alignStart="@id/phone_ic"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_location" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/location_ic"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/txtAddInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line2"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="10dp"
+            android:text="Additional Info"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/person_ic"
+            android:layout_width="63dp"
+            android:layout_height="38dp"
+            android:layout_below="@id/txtAddInfo"
+            android:layout_alignStart="@id/email_ic"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_person" />
+
+        <ImageView
+            android:id="@+id/field_ic"
+            android:layout_width="63dp"
+            android:layout_height="38dp"
+            android:layout_below="@id/person_ic"
+            android:layout_alignStart="@id/email_ic"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_school"/>
+
+        <Spinner
+            android:id="@+id/editField"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/txtEmail"
+            android:layout_alignBottom="@id/field_ic"
+            android:layout_marginBottom="9dp"
+            android:layout_toEndOf="@id/field_ic"
+            android:entries="@array/field_array" />
+
+        <ImageView
+            android:id="@+id/world_ic"
+            android:layout_width="63dp"
+            android:layout_height="38dp"
+            android:layout_below="@id/field_ic"
+            android:layout_alignStart="@id/email_ic"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_world" />
+
+
+        <ImageView
+            android:id="@+id/money_ic"
+            android:layout_width="63dp"
+            android:layout_height="38dp"
+            android:layout_below="@id/mandarinCheck"
+            android:layout_alignStart="@id/email_ic"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_money" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userImg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:inputType="textPersonName"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/email_ic"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/email_ic"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/editPhoneNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/phone_ic"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/phone_ic"
+            android:ems="10"
+            android:inputType="phone"
+            android:hint="Your phone no..."
+            android:visibility="invisible" />
+
+        <Spinner
+            android:id="@+id/editCountry"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/txtEmail"
+            android:layout_alignBottom="@id/location_ic"
+            android:layout_marginBottom="9dp"
+            android:layout_toEndOf="@id/location_ic"
+            android:entries="@array/country_array" />
+
+        <Spinner
+            android:id="@+id/editState"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/location_ic"
+            android:layout_marginBottom="9dp"
+            android:layout_toEndOf="@id/editCountry"
+            android:entries="@array/state_array" />
+
+        <Spinner
+            android:id="@+id/editExpLvl"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/txtEmail"
+            android:layout_alignBottom="@id/person_ic"
+            android:layout_marginBottom="9dp"
+            android:layout_toEndOf="@id/person_ic"
+            android:entries="@array/exp_lvl" />
+
+        <Spinner
+            android:id="@+id/editSalary"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/txtEmail"
+            android:layout_alignBottom="@id/money_ic"
+            android:layout_marginBottom="9dp"
+            android:layout_toEndOf="@id/money_ic"
+            android:entries="@array/salary_range" />
+
+        <CheckBox
+            android:id="@+id/engCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/txtEmail"
+            android:layout_alignBottom="@id/world_ic"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="9dp"
+            android:text="English" />
+
+        <CheckBox
+            android:id="@+id/malayCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/engCheck"
+            android:layout_alignStart="@id/txtEmail"
+            android:layout_marginStart="10dp"
+            android:text="Malay" />
+
+        <CheckBox
+            android:id="@+id/mandarinCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/malayCheck"
+            android:layout_alignStart="@id/txtEmail"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="9dp"
+            android:text="Mandarin" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

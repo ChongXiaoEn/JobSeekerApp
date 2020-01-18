@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">Job Seeker</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="btnApply_apply">APPLY</string>
+    <string name="btnApply_cancel">CANCEL APPLICATION</string>
+    <string name="btnBookmark_bookmark">BOOKMARK</string>
+    <string name="btnBookmark_cancel">CANCEL BOOKMARK</string>
+
+    <string name="btnBookmark_dialog_bk_message">Confirm to Bookmark?</string>
+    <string name="btnBookmark_dialog_bk_title">Bookmark</string>
+    <string name="btnApply_dialog_message">Confirm to Apply?</string>
+    <string name="btnApply_dialog_title">Apply Job</string>
+
+    <string name="btnBookmark_dialog_bk_message_cancel">Are You sure to Cancel Bookmark?</string>
+    <string name="btnBookmark_dialog_bk_title_cancel">Cancel Bookmark</string>
+    <string name="btnApply_dialog_message_cancel">Are You sure to Cancel?</string>
+    <string name="btnApply_dialog_title_cancel">Cancel Job Application</string>
+
+    <string name="dialog_ok">OK</string>
+    <string name="btnApply_dialog_job_applied">Applied Successfully</string>
+    <string name="btnBookmark_dialog_bookmark">Bookmarked Successfully</string>
+    <string name="btnApply_dialog_job_cancel">Cancelled Successfully</string>
+    <string name="btnBookmark_dialog_bookmark_cancel">Cancelled Successfully</string>
+    <string name="dialog_cancel">Cancel</string>
+
+    <string name="country_prompt">Select a country</string>
+    <string name="state_prompt">Select a state</string>
+    <string name="salary_prompt">Select a salary range</string>
+    <string name="field_prompt">Select a field</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string name="position">Position</string>
+    <string name="salary">Salary</string>
+    <string name="location">Location</string>
+    <string name="job_requirements">Job Requirements</string>
+    <string name="insert_details_here">Insert details here…</string>
+    <string name="job_scope_description">Job Scope/Description</string>
+    <string name="scope_description_here">Scope/Description here…</string>
+    <string name="name">Name</string>
+    <string name="your_name">Your name</string>
+    <string name="i_have_work_experience">I have work experience</string>
+    <string name="i_m_a_student">I\'m a student</string>
+    <string name="i_m_a_fresh_graduate">I\'m a fresh graduate</string>
+    <string name="your_current_experience">Your current experience</string>
+    <string name="confirm">Confirm</string>
+    <string name="field">Field</string>
+    <string name="language">Language</string>
+    <string name="english">English</string>
+    <string name="malay">Malay</string>
+    <string name="mandarin">Mandarin</string>
+
+    <string name="sign_up">SIGN UP</string>
+    <string name="expected_salary_rm">Expected Salary(RM)</string>
+    <string name="change_language_amp_country"><![CDATA[Change language]]></string>
+    <string name="log_out">LOG OUT</string>
+
+    <string-array name="exp_lvl">
+
+        <item>I have work experience</item>
+        <item>I\'m a student</item>
+        <item>I\'m a fresh graduate</item>
+
+    </string-array>
+
+    <string-array name="country_array">
+
+        <item>Malaysia</item>
+
+    </string-array>
+
+    <string-array name="state_array">
+
+        <item>Selangor</item>
+        <item>Penang</item>
+        <item>Johor</item>
+        <item>Pahang</item>
+
+    </string-array>
+
+    <string-array name="salary_range">
+
+        <item>1500 – 3000</item>
+        <item>3000 – 6000</item>
+        <item>6000 - 9000</item>
+        <item>9000 - 15000</item>
+        <item> > 15000</item>
+
+
+    </string-array>
+
+    <string-array name="field_array">
+
+        <item>ICT</item>
+        <item>Marketing</item>
+        <item>Engineering</item>
+        <item>Business</item>
+        <item>Accounting</item>
+        <item>Education</item>
+        <item>Medicine</item>
+        <item>Communications</item>
+
+    </string-array>
+
+</resources>

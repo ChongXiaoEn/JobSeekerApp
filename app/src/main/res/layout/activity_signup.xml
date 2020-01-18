@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/etName"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toStartOf="@id/etName"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSignUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Your name"
+        android:inputType="textPersonName" />
+
+    <RadioGroup
+        android:id="@+id/radioUserStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtUserStatus"
+        android:layout_alignStart="@id/txtUserStatus"
+        android:layout_marginTop="5dp">
+
+        <RadioButton
+            android:id="@+id/rbWithWorkExp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I have work experience"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rbStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I'm a student" />
+
+        <RadioButton
+            android:id="@+id/rbFreshGrad"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="I'm a fresh graduate" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtUserStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etName"
+        android:layout_alignStart="@id/txtName"
+        android:layout_marginTop="15dp"
+        android:text="Your current experience" />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/salarySpinner"
+        android:layout_marginTop="10dp"
+        android:text="Confirm" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:text="Cancel" />
+
+    <TextView
+        android:id="@+id/txtField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioUserStatus"
+        android:layout_alignStart="@id/radioUserStatus"
+        android:layout_marginTop="20dp"
+        android:text="Field" />
+
+    <Spinner
+        android:id="@+id/fieldSpinner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/txtField"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/txtField"
+        android:entries="@array/field_array"
+        android:prompt="@string/field_prompt" />
+
+    <TextView
+        android:id="@+id/txtLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtField"
+        android:layout_alignStart="@id/txtField"
+        android:layout_marginTop="20dp"
+        android:text="Language" />
+
+    <CheckBox
+        android:id="@+id/engCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/txtLanguage"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-6dp"
+        android:layout_toEndOf="@id/txtLanguage"
+        android:text="English" />
+
+    <CheckBox
+        android:id="@+id/malayCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/engCB"
+        android:layout_alignStart="@id/engCB"
+        android:layout_marginTop="5dp"
+        android:text="Malay" />
+
+    <CheckBox
+        android:id="@+id/mandarinCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/malayCB"
+        android:layout_alignStart="@id/malayCB"
+        android:layout_marginTop="5dp"
+        android:text="Mandarin" />
+
+    <TextView
+        android:id="@+id/txtLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mandarinCB"
+        android:layout_alignStart="@id/txtLanguage"
+        android:layout_marginTop="15dp"
+        android:text="Location" />
+
+    <Spinner
+        android:id="@+id/countrySpinner"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLocation"
+        android:layout_alignStart="@id/txtLocation"
+        android:layout_marginTop="5dp"
+        android:entries="@array/country_array"
+        android:prompt="@string/country_prompt" />
+
+    <Spinner
+        android:id="@+id/stateSpinner"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/countrySpinner"
+        android:layout_alignStart="@id/countrySpinner"
+        android:layout_marginTop="10dp"
+        android:entries="@array/state_array"
+        android:prompt="@string/state_prompt" />
+
+    <TextView
+        android:id="@+id/txtSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="20dp"
+        android:text="SIGN UP"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stateSpinner"
+        android:layout_alignStart="@id/stateSpinner"
+        android:layout_marginTop="10dp"
+        android:text="Expected Salary(RM)" />
+
+    <Spinner
+        android:id="@+id/salarySpinner"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSalary"
+        android:layout_alignStart="@id/txtSalary"
+        android:layout_marginTop="5dp"
+        android:entries="@array/salary_range"
+        android:prompt="@string/salary_prompt" />
+
+</RelativeLayout>
